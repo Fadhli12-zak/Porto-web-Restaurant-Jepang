@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+
+body {
+  font-family: "Sedan", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: #eeee;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  position: sticky;
+  justify-content: space-between;
+}
+
+#navbar {
+  display: flex;
+  list-style: none;
+  height: 5vh;
+  align-items: center;
+  position: relative;
+}
+#navbar li {
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  color: #373a40;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#navbar li a:hover {
+  color: #dc5f00;
+  transition: 0.1s ease;
+}
+
+.Reservation a {
+  text-decoration: none;
+  color: #373a40;
+}
+.Logo a {
+  text-decoration: none;
+  color: #373a40;
+}
+
+#content {
+  margin-top: -18px;
+  background-image: url("ui\ web/image/Backgroun.jpg");
+  background-size: cover;
+}
