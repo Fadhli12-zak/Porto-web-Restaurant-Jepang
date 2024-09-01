@@ -29,7 +29,7 @@ body {
 #navbar li a {
   text-decoration: none;
   color: #373a40;
-  padding: 0 20px;
+  padding: 0 50px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -51,4 +51,81 @@ body {
   margin-top: -18px;
   background-image: url("ui\ web/image/Backgroun.jpg");
   background-size: cover;
+  height: 110vh;
+}
+
+.text-1 h3 {
+  color: #eeee;
+  margin-left: 110px;
+  padding-top: 70px;
+  margin-bottom: 0;
+}
+.text-2 h3 {
+  color: #eeee;
+  margin-left: 1300px;
+  margin-top: -25px;
+}
+.text-3 h3 {
+  color: #eeee;
+  margin-top: 420px;
+  padding-left: 110px;
+}
+.text-4 h3 {
+  color: #eeee;
+  margin-left: 1325px;
+  margin-top: -50px;
+}
+
+.image {
+  margin-left: 80px;
+}
+.image-1 {
+  margin-top: 100px;
+  margin-left: 280px;
+}
+.image-1 img {
+  height: 70vh;
+  width: auto;
+}
+.image-2 {
+  margin-left: 720px;
+  margin-top: -512px;
+}
+.image-2 img {
+  height: 30vh;
+  width: auto;
+}
+.image-3 {
+  margin-top: -118px;
+  margin-left: 999px;
+}
+.image-3 img {
+  width: auto;
+  height: 13vh;
+}
+.image-1 h1 {
+  margin-top: -605px;
+  margin-left: -150px;
+  font-size: 14vh;
+  color: #eeee;
+  font-weight: 100;
+}
+.image-1 h2 {
+  margin-left: 300px;
+  font-size: 15vh;
+  color: #eeee;
+  font-weight: 100;
+}
+
+.image-1 .circle img {
+  height: 15vh;
+  margin-top: -180px;
+  margin-left: 650px;
+}
+.image-1 h3 {
+  color: #eeee;
+  margin-left: 430px;
+  font-weight: 100;
+  margin-top: -120px;
+  font-size: 3vh;
 }
