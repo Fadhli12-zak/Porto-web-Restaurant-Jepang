@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #header {
@@ -36,6 +37,7 @@ body {
 #navbar li a:hover {
   color: #dc5f00;
   transition: 0.1s ease;
+  font-size: 16px;
 }
 
 .Reservation a {
@@ -128,4 +130,43 @@ body {
   font-weight: 100;
   margin-top: -120px;
   font-size: 3vh;
+}
+#about-us {
+  height: 100vh;
+}
+#about-us .abt-txt {
+  height: 78px;
+  position: relative;
+  align-content: center;
+  margin-left: 40px;
+}
+
+#about-us .abt-txt p {
+  font-size: large;
+}
+
+#about-us .Banner-About img {
+  overflow: hidden;
+}
+#about-us .Banner-About img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#about-us .description-about {
+  padding: 30px 200px 38px 200px;
+}
+#about-us .description-about p {
+  font-size: 25px;
+  word-spacing: 8px;
+  text-align: center;
+}
+#about-us .line {
+  background-color: black;
+  height: 1px;
+  margin-top: 4rem;
+}
+#menu {
+  height: 110vh;
 }
