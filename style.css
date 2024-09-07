@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
 html {
   scroll-behavior: smooth;
+  background-color: #eeee;
 }
 body {
   font-family: "Sedan", sans-serif;
@@ -14,23 +15,24 @@ body {
   display: flex;
   padding: 0 40px;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
+  width: 95%;
   justify-content: space-between;
+  margin-top: 18px;
 }
-
 #navbar {
   display: flex;
   list-style: none;
   height: 5vh;
   align-items: center;
-  position: relative;
 }
 #navbar li {
   position: relative;
 }
 #navbar li a {
   text-decoration: none;
-  color: #373a40;
+  color: black;
   padding: 0 50px;
   font-size: 14px;
   font-weight: 400;
@@ -55,7 +57,10 @@ body {
   margin-top: -18px;
   background-image: url("ui\ web/image/Backgroun.jpg");
   background-size: cover;
-  height: 110vh;
+  height: 120vh;
+}
+#content .hero {
+  padding-top: 40px;
 }
 
 .text-1 h3 {
@@ -137,7 +142,7 @@ body {
 /* about section */
 #about-us .abt-txt {
   height: 78px;
-  position: relative;
+
   align-content: center;
   margin-left: 40px;
 }
@@ -159,6 +164,7 @@ body {
   object-fit: cover;
   animation: slide 10s infinite;
 }
+
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -192,10 +198,82 @@ body {
   height: 1px;
   margin-top: 4rem;
 }
+/* Menu */
 #menu {
-  height: 110vh;
+  height: 90vh;
 }
-@media (max-width: 799px) {
+#menu .menu-title {
+  font-size: 70px;
+  margin-left: 8rem;
+  margin-top: 5rem;
+}
+#menu .see-all {
+  margin-left: 45rem;
+  margin-top: -120px;
+  font-size: 15px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+}
+#menu .see-all a {
+  text-decoration: none;
+  color: #373a40;
+  font-size: 11px;
+}
+#menu .menu-list-title {
+  padding-left: 12rem;
+  margin-top: -40rem;
+}
+#menu .menu-list {
+  padding-left: 12rem;
+}
+#menu .menu-image {
+  margin-left: 850px;
+}
+#menu .menu-image img {
+  width: 80%;
+  height: 80vh;
+  margin-top: -50px;
+}
+#menu .menu-list-title span {
+  border-style: solid;
+  border-width: 1px;
+  border-top: 0;
+  border-bottom: 0;
+  margin-right: 65px;
+  padding-right: 20px;
+  border-left: 0;
+  margin-left: -55px;
+}
+#menu .menu-list-title a {
+  text-decoration: none;
+  color: #373a40;
+}
+#menu .menu-list {
+  margin-top: 30px;
+  margin-left: -40px;
+  width: 40rem;
+}
+#menu .menu-list p {
+  border-style: solid;
+  font-size: 28px;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-width: 2px;
+  padding: 0 0 30px 20px;
+}
+#menu .menu-list .first-line {
+  border-style: solid;
+  border-width: 1px;
+}
+@media (max-width: 768px) {
+  #header {
+    width: 90%;
+  }
   #content {
     height: 95vh;
   }
@@ -281,3 +359,78 @@ body {
     word-spacing: 3px;
   }
 }
+/* @media (max-width: 488px) {
+  #content {
+    height: 95vh;
+  }
+  .text-1 h3 {
+    padding-top: 70px;
+    margin-bottom: 0;
+    font-size: 10px;
+    margin-left: 28px;
+  }
+  .text-2 h3 {
+    margin-left: 380px;
+    font-size: 10px;
+    margin-top: -15px;
+  }
+  .text-3 h3 {
+    margin-top: 380px;
+    margin-left: -200px;
+    font-size: 10px;
+    background-color: black;
+  }
+  .text-4 h3 {
+    margin-left: 1px;
+    margin-top: -50px;
+    font-size: 10px;
+  }
+
+  .image {
+    margin-left: 1px;
+  }
+  .image-1 {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .image-1 img {
+    height: 48vh;
+    width: auto;
+  }
+  .image-2 {
+    margin-left: 330px;
+    margin-top: 1px;
+  }
+  .image-2 img {
+    height: 15vh;
+    width: auto;
+  }
+  .image-3 {
+    margin-top: -92px;
+    margin-left: 100px;
+  }
+  .image-3 img {
+    width: auto;
+    height: 10vh;
+  }
+  .image-1 h1 {
+    margin-top: -400px;
+    margin-left: -90px;
+    font-size: 6vh;
+  }
+  .image-1 h2 {
+    margin-left: 200px;
+    font-size: 6vh;
+  }
+
+  .image-1 .circle img {
+    height: 12vh;
+    margin-top: -50px;
+    margin-left: 200px;
+  }
+  .image-1 h3 {
+    margin-left: 40px;
+    margin-top: -120px;
+    font-size: 2vh;
+  }
+/* }  */
