@@ -43,7 +43,9 @@ body {
   transition: 0.1s ease;
   font-size: 16px;
 }
-
+.sidebar i {
+  display: none;
+}
 .Reservation a {
   text-decoration: none;
   color: #373a40;
@@ -58,6 +60,7 @@ body {
   background-image: url("ui\ web/image/Backgroun.jpg");
   background-size: cover;
   height: 120vh;
+  position: relative;
 }
 #content .hero {
   padding-top: 40px;
@@ -200,7 +203,8 @@ body {
 }
 /* Menu */
 #menu {
-  height: 90vh;
+  height: 200vh;
+  padding-top: 20px;
 }
 #menu .menu-title {
   font-size: 70px;
@@ -270,6 +274,44 @@ body {
   border-style: solid;
   border-width: 1px;
 }
+
+#menu .drag-menu {
+  display: flex;
+  overflow: hidden;
+  margin: 150px 120px 200px 128px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: cover;
+  height: 28rem;
+}
+
+#menu .drag-menu img.slide {
+  height: 34rem;
+  width: 100%;
+  transition: 0.5s;
+  margin-right: 30px;
+  object-fit: cover;
+  display: block;
+}
+
+#menu button.prev,
+button.next {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  box-shadow: none;
+  border-width: 1px;
+  background-color: #dc5f00;
+  border: 0;
+  color: #eeee;
+}
+/* history */
+
+/* #history {
+  height: 90vh;
+} */
 @media (max-width: 768px) {
   #header {
     width: 90%;

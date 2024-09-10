@@ -13,13 +13,17 @@
       </div>
       <div>
         <ul id="navbar">
-          <li><a href="#menu">Menu</a></li>
           <li><a href="#about-us">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#history">History</a></li>
           <li><a href="#">Events</a></li>
         </ul>
       </div>
       <div class="Reservation">
         <a href="#">Reservation</a>
+      </div>
+      <div class="sidebar"></div>
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
       </div>
     </section>
 
@@ -122,8 +126,21 @@
         <p>Lorem, ipsum dolor sit amet consectetur </p>
         <p>Lorem, ipsum dolor sit amet consectetur </p>
       </div>
-      
+      <button class="prev" onclick="prevSlide()">Prev</button>
+      <div class="drag-menu">
+          <img class="slide" src="ui web/Image/menu-drag1.jpg" alt="slide1" style="left: 0%;">
+          <img class="slide" src="ui web/Image/menu-drag2jpg.jpg" alt="slide1" style="left: 100%;">
+          <img class="slide" src="ui web/Image/menu-drag3.jpg" alt="slide1" style="left: 200%;">
+          <img class="slide" src="ui web/Image/menu-drag4.jpg" alt="slide1" style="left: 300%;">
+          <img class="slide" src="ui web/Image/menu-drag5.jpg" alt="slide1" style="left: 400%;">
+          <img class="slide" src="ui web/Image/menu-drag1.jpg" alt="slide1" style="left: 500%;">
+      </div>
+     <button class="next" onclick="nextSlide()">Next</button>  
     </section>
+    <!-- <section id="history">
+
+    </section> -->
+    <script src="https://kit.fontawesome.com/a8b06797b6.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/a8b06797b6.js"
