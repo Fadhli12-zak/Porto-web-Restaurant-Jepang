@@ -278,7 +278,6 @@ body {
 #menu .drag-menu {
   display: flex;
   overflow: hidden;
-  margin: 150px 120px 200px 128px;
   position: relative;
   flex-direction: row;
   justify-content: space-between;
@@ -291,14 +290,14 @@ body {
   height: 34rem;
   width: 100%;
   transition: 0.5s;
-  margin-right: 30px;
+  margin-right: 12px;
   object-fit: cover;
   display: block;
 }
 
 #menu button.prev,
 button.next {
-  height: 80px;
+  height: 30px;
   width: 80px;
   border-radius: 100%;
   box-shadow: none;
@@ -306,12 +305,19 @@ button.next {
   background-color: #dc5f00;
   border: 0;
   color: #eeee;
+  margin: 198px 10px 0 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.slider {
+  display: flex;
+  margin: 100px 85px 200px 85px;
 }
 /* history */
 
-/* #history {
+#history {
   height: 90vh;
-} */
+}
 @media (max-width: 768px) {
   #header {
     width: 90%;
