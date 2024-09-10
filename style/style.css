@@ -57,7 +57,7 @@ body {
 
 #content {
   margin-top: -18px;
-  background-image: url("ui\ web/image/Backgroun.jpg");
+  background-image: url("background/Backgroun.jpg");
   background-size: cover;
   height: 120vh;
   position: relative;
