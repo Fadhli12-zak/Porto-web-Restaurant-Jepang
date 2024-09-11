@@ -201,9 +201,10 @@ body {
   height: 1px;
   margin-top: 4rem;
 }
+
 /* Menu */
 #menu {
-  height: 200vh;
+  height: 150vh;
   padding-top: 20px;
 }
 #menu .menu-title {
@@ -316,8 +317,56 @@ button.next {
 /* history */
 
 #history {
-  height: 90vh;
+  height: 100vh;
+  margin: 30px 43px 58px 43px;
+  padding-top: 140px;
 }
+#history .image-history {
+  height: 90vh;
+  width: 40vw;
+}
+#history .image-history img {
+  width: 35vw;
+  height: 65vh;
+  object-fit: cover;
+  margin: 10px 0 0 85px;
+  position: relative;
+}
+#history .image-history .desc-history {
+  margin: 10px 0 0 85px;
+}
+#history .desc-history h3 {
+  color: #dc5f00;
+}
+#history .year {
+  margin-left: 700px;
+  margin-top: -790px;
+}
+#history .year li {
+  list-style: none;
+}
+#history .year a {
+  text-decoration: none;
+  color: #373a40;
+  font-size: 8rem;
+  font-weight: 200;
+  padding-left: 140px;
+  margin-top: 0;
+  border-style: solid;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-color: #373a40;
+}
+h2.title-history {
+  margin-left: 75rem;
+  color: #373a40;
+}
+#history .year a:hover {
+  color: #dc5f00;
+  border-color: #dc5f00;
+}
+
 @media (max-width: 768px) {
   #header {
     width: 90%;
