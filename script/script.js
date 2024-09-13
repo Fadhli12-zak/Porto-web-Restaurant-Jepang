@@ -1,5 +1,8 @@
 const slides = document.querySelectorAll(".slide");
 let counter = 0;
+const bar = document.getElementById("bar");
+const nav = document.getElementById("navbar");
+const x = document.getElementById("x");
 
 slides.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
@@ -28,3 +31,14 @@ const slideImage = () => {
     }
   });
 };
+if (bar) {
+  bar.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+}
+
+if (x) {
+  x.addEventListener("click", () => {
+    nav.classList.add("active");
+  });
+}
