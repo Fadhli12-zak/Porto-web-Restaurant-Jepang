@@ -1143,7 +1143,7 @@ footer .copyright p {
     top: 30px;
   }
   .text-2 h3 {
-    right: 330px;
+    right: 335px;
     font-size: 10px;
     position: relative;
     top: 38px;
@@ -1157,7 +1157,7 @@ footer .copyright p {
     position: relative;
     font-size: 10px;
     bottom: 38px;
-    right: 350px;
+    right: 355px;
   }
 
   .image {
@@ -1206,7 +1206,7 @@ footer .copyright p {
     height: 5vh;
     position: relative;
     top: 280px;
-    right: 120px;
+    right: 150px;
   }
   .image-1 h3 {
     position: relative;
@@ -1406,7 +1406,7 @@ footer .copyright p {
   #Events ul {
     list-style: none;
     position: relative;
-    left: 18rem;
+    left: 15.8rem;
     top: 2px;
   }
   #Events li {
