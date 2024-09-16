@@ -674,8 +674,11 @@ footer .copyright p {
   html {
     overflow-x: hidden;
   }
+  body {
+    overflow-x: hidden;
+  }
   #header {
-    width: 90%;
+    width: 100%;
     height: 8vh;
     margin-bottom: 20px;
     left: 200px;
@@ -687,10 +690,10 @@ footer .copyright p {
     justify-content: flex-start;
     flex-direction: column;
     position: fixed;
-    left: 760px;
-    top: 55px;
+    left: 175%;
+    top: 53px;
     height: 100vh;
-    width: 200px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
@@ -1035,6 +1038,7 @@ footer .copyright p {
   }
   footer .content {
     left: 15rem;
+    top: 45px;
   }
   footer .content li {
     list-style: none;
@@ -1066,11 +1070,11 @@ footer .copyright p {
     overflow-x: hidden;
   }
   #header {
-    width: 180%;
+    width: 100%;
     height: 8vh;
     margin-bottom: 20px;
     position: fixed;
-    left: -20px;
+    left: 0px;
   }
   #navbar {
     display: flex;
@@ -1078,16 +1082,17 @@ footer .copyright p {
     justify-content: flex-start;
     flex-direction: column;
     position: fixed;
-    left: 415px;
-    top: 55px;
-    height: 150vh;
-    width: 170px;
+    left: 580px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 10px 0 0 10px;
+    padding: 30px 0 0px 0px;
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform: translateX(-100%);
+    margin-top: -20px;
   }
   #navbar.active {
     display: block;
@@ -1095,14 +1100,18 @@ footer .copyright p {
     opacity: 1;
   }
   #navbar li {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     margin-top: 10px;
+  }
+  #navbar li a {
+    font-size: 15px;
   }
   #sidebar {
     display: flex;
     align-items: center;
     position: relative;
-    left: -400px;
+    left: -70px;
+    z-index: -1;
   }
   #sidebar i {
     color: #373a40;
@@ -1113,20 +1122,19 @@ footer .copyright p {
   #sidebar i:hover {
     color: #dc5f00;
   }
-  #x {
-    display: initial;
+  #navbar li #x {
     cursor: pointer;
     position: fixed;
     font-size: 25px;
-    left: 130px;
-    margin-bottom: 30px;
+    padding-bottom: 25px;
+    left: 20px;
   }
   #x:hover {
     color: #dc5f00;
   }
   #content {
-    height: 80vh;
-    margin-top: 100px;
+    height: 100%;
+    margin-top: 60px;
   }
   .text-1 h3 {
     margin-bottom: 0;
@@ -1135,7 +1143,7 @@ footer .copyright p {
     top: 30px;
   }
   .text-2 h3 {
-    right: 300px;
+    right: 330px;
     font-size: 10px;
     position: relative;
     top: 38px;
@@ -1143,12 +1151,13 @@ footer .copyright p {
   .text-3 h3 {
     position: relative;
     font-size: 10px;
+    bottom: 50px;
   }
   .text-4 h3 {
     position: relative;
     font-size: 10px;
-    bottom: -11px;
-    right: 310px;
+    bottom: 38px;
+    right: 350px;
   }
 
   .image {
@@ -1243,8 +1252,11 @@ footer .copyright p {
     }
   }
   #menu {
-    height: 150vh;
+    height: 100%;
     padding-top: 20px;
+    position: relative;
+    right: 30px;
+    top: 50px;
   }
   #menu .menu-title {
     font-size: 40px;
@@ -1254,7 +1266,7 @@ footer .copyright p {
   }
   #menu .see-all {
     position: relative;
-    right: 420px;
+    right: 400px;
     bottom: 10px;
   }
   #menu .menu-list-title {
@@ -1270,7 +1282,7 @@ footer .copyright p {
     margin-bottom: 80rem;
   }
   #menu .menu-image {
-    margin-left: 80px;
+    margin-left: 90px;
   }
 
   #menu .menu-list-title a {
@@ -1290,37 +1302,50 @@ footer .copyright p {
     border-top: 0;
     border-width: 2px;
     padding: 0 10px 15px 50px;
-    width: 18rem;
+    max-width: 17rem;
     position: relative;
   }
   #menu .menu-list .first-line {
     border-style: solid;
     border-width: 1px;
-    width: 21.8rem;
+    width: 20.5rem;
     position: relative;
     left: 80px;
   }
   #menu .drag-menu {
     position: relative;
     bottom: 32rem;
+    left: 25px;
   }
 
   #menu .drag-menu img.slide {
     height: 20rem;
     width: 100%;
+    position: relative;
   }
   .slider {
     margin: 30px 0px 200px 10px;
   }
+  #menu button.prev {
+    position: relative;
+    left: 25px;
+  }
+  #menu button.next {
+    position: relative;
+    left: 23px;
+  }
   /* history */
 
   #history {
-    height: 100vh;
-    margin: 30px 0 58px 0;
+    height: 100%;
+    margin: 0px 0 58px 0;
     padding-top: 140px;
+    position: relative;
+    bottom: 800px;
+    right: 10px;
   }
   #history .image-history {
-    height: 90vh;
+    height: 77vh;
     width: 40vw;
   }
   #history .image-history img {
@@ -1336,7 +1361,7 @@ footer .copyright p {
   }
   #history .desc-history h3 {
     color: #dc5f00;
-    width: 350px;
+    width: 310px;
   }
   #history .desc-history p {
     width: 70px;
@@ -1344,7 +1369,7 @@ footer .copyright p {
   #history .year {
     position: relative;
     right: 570px;
-    top: 450px;
+    top: 680px;
   }
   #history .year li {
     list-style: none;
@@ -1352,24 +1377,25 @@ footer .copyright p {
   #history .year a {
     font-size: 3rem;
     font-weight: 200;
-    padding-left: 70px;
+    padding-left: 30px;
     margin-top: 0;
     border-style: solid;
     border-right: 0;
     border-bottom: 0;
   }
   h2.title-history {
-    margin-left: 19rem;
+    margin-left: 14rem;
   }
   /* Events section */
   #Events {
-    height: 130vh;
+    height: 150vh;
     position: relative;
     margin-top: 100px;
     padding-top: 50px;
     overflow: hidden;
     margin-left: -100px;
     margin-right: 30px;
+    bottom: 100px;
   }
   #Events p {
     font-size: 20px;
@@ -1397,6 +1423,7 @@ footer .copyright p {
     position: relative;
     left: 8rem;
     top: 4px;
+    padding-bottom: 50px;
   }
   #Events .events-image-1 img {
     width: 100vw;
@@ -1404,7 +1431,7 @@ footer .copyright p {
     object-fit: cover;
   }
   #Events .events-image-1 a.icon1 {
-    left: 305px;
+    margin-left: 35px;
   }
   #Events .events-image-2 {
     height: 51vh;
@@ -1412,6 +1439,7 @@ footer .copyright p {
     position: relative;
     left: 8rem;
     bottom: 23rem;
+    padding-bottom: 50px;
   }
   #Events .events-image-2 img {
     width: 100vw;
@@ -1419,7 +1447,7 @@ footer .copyright p {
     object-fit: cover;
   }
   #Events .events-image-2 a.icon2 {
-    left: 305px;
+    margin-left: 0px;
   }
   #Events .events-image-3 {
     height: 51vh;
@@ -1427,6 +1455,7 @@ footer .copyright p {
     position: relative;
     left: 8rem;
     bottom: 33.7rem;
+    padding-bottom: 50px;
   }
   #Events .events-image-3 img {
     width: 100vw;
@@ -1434,7 +1463,7 @@ footer .copyright p {
     object-fit: cover;
   }
   #Events .events-image-3 a.icon3 {
-    left: 305px;
+    margin-left: 0px;
   }
   #Events .events-image-4 {
     height: 51vh;
@@ -1442,6 +1471,7 @@ footer .copyright p {
     position: relative;
     left: 8rem;
     bottom: 44.4rem;
+    padding-bottom: 50px;
   }
   #Events .events-image-4 img {
     width: 100vw;
@@ -1449,38 +1479,38 @@ footer .copyright p {
     object-fit: cover;
   }
   #Events .events-image-4 a.icon4 {
-    left: 305px;
+    margin-left: 38px;
   }
   /* footer section */
   footer {
-    margin-top: 50px;
-    height: 35vh;
+    height: 44vh;
     background-color: #373a40;
     position: relative;
-    /* overflow: hidden; */
+    overflow-x: hidden;
   }
   footer .brand {
     position: absolute;
     left: 30px;
-    top: 20px;
+    top: 0px;
   }
   footer .brand h1 {
-    font-size: 35px;
+    font-size: 25px;
     color: #eeee;
     font-weight: 100;
   }
   footer .content {
     position: absolute;
-    left: 17rem;
-    bottom: 100px;
+    left: 16rem;
+    bottom: 145px;
   }
   footer .content li {
     list-style: none;
     padding-bottom: 10px;
+    font-size: 10px;
   }
   footer .contact {
     position: absolute;
-    right: 7.5rem;
+    right: 11rem;
     top: 130px;
   }
   footer .contact li {
@@ -1491,16 +1521,14 @@ footer .copyright p {
   footer .contact a {
     color: #eee;
     cursor: pointer;
-    font-size: 100;
-  }
-  footer .contact li a:hover {
-    color: #b8b7b7;
+    font-size: 10px;
   }
   footer .copyright {
-    top: 230px;
+    top: 260px;
     left: 28px;
   }
   footer .copyright p {
     color: #eee;
+    font-size: 6px;
   }
 }
